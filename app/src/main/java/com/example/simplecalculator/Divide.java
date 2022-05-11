@@ -8,14 +8,14 @@ public class Divide {
         this.dividend = dividend;
         this.divisor = divisor;
     }
-    private double getQuotient(){
-        return dividend/divisor;
+    private int getQuotient(){
+        return (int) (dividend/divisor);
     }
-    private  double getRemainder(){
-        return dividend%divisor;
+    private  int getRemainder(){
+        return (int) (dividend%divisor);
     }
     public String toString(){
-         //return String.valueOf(getQuotient())+"R: "+String.valueOf(getRemainder());
-        return String.valueOf(getQuotient());
+         return "Q: "+String.valueOf(getQuotient())+" R: "+String.valueOf(getRemainder());
+        //return String.valueOf(getQuotient());
     }
 }
